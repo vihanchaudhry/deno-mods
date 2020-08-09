@@ -3,6 +3,14 @@
   "version": "0.2.0",
   "private": true,
   "description": "A List of the Most Popular Open Source Deno Modules.",
+  "keywords": [
+    "nextjs",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vihanchaudhry/deno-mods.git"
+  },
   "scripts": {
     "dev": "next dev -p 3030",
     "build": "next build",
