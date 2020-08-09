@@ -3,8 +3,8 @@ import { ModuleData } from '../interfaces/module-data';
 function ModuleItem(data: ModuleData) {
   return (
     <div
-      className={`max-w-sm rounded overflow-hidden bg-white shadow px-6 mb-6 flex-shrink-0 md:mx-3 md:w-96 ${
-        data.isLoading ? 'h-96 w-64 bg-gray-200 flex items-center' : ''
+      className={`flex flex-col max-w-sm rounded overflow-hidden bg-white shadow px-6 mb-6 flex-shrink-0 md:mx-3 md:w-96 ${
+        data.isLoading ? 'h-96 w-64 bg-gray-200 justify-center items-center' : 'justify-between'
       }`}
     >
       {data.isLoading ? (
@@ -16,7 +16,7 @@ function ModuleItem(data: ModuleData) {
           <p className='text-gray-700'>{data.module.description}</p>
           <p>License: {data.module.license}</p>
           <p>⭐ {data.module.stars_count}</p>
-          <p>
+          <p className=''>
             <a href={data.module.html_url} target='_blank'>
               Repository
             </a>
