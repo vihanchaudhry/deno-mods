@@ -1,10 +1,10 @@
 import { AppProps } from 'next/app';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import '../styles/index.css';
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout title='jsFramework - Top Open Source JavaScript Frameworks'>
+    <Layout title='denoMods - Top Open Source Deno Modules'>
       <Component {...pageProps} />
     </Layout>
   );
