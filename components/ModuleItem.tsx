@@ -11,12 +11,12 @@ function ModuleItem(data: ModuleData) {
         <p className='text-center mx-auto text-lg'>Loading...</p>
       ) : (
         <>
-          <h3 className='font-bold mt-6 mb-0'>{data.module.name}</h3>
+          <h3 className='font-bold text-gray-900 mt-6 mb-0'>{data.module.name}</h3>
           <p className='text-sm text-gray-600'>{data.module.full_name}</p>
           <p className='text-gray-700'>{data.module.description}</p>
-          <p>License: {data.module.license}</p>
-          <p>⭐ {data.module.stars_count}</p>
-          <p className=''>
+          <p className='text-gray-800 text-sm'>License: {data.module.license}</p>
+          <p className='text-gray-900 font-semibold'>⭐ {data.module.stars_count}</p>
+          <p className='text-blue-500 hover:text-blue-700'>
             <a href={data.module.html_url} target='_blank'>
               Repository
             </a>

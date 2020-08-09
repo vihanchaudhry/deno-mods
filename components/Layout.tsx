@@ -32,9 +32,13 @@ function Layout({ children, title = 'denoMods' }: Props) {
       <header>
         <div className='bg-white'>
           <div className='h-64 max-w-5xl px-6 mx-auto flex flex-col items-center justify-center'>
-            <h1 className='font-mono text-5xl md:text-6xl'>
-              <span className='highlight'>deno</span>Mods
-            </h1>
+            <Link href='/'>
+              <a className='no-underline text-gray-900'>
+                <h1 className='font-mono text-5xl md:text-6xl'>
+                  <span className='highlight'>deno</span>Mods
+                </h1>
+              </a>
+            </Link>
 
             <h2 className='text-xl font-serif text-gray-700 text-center'>
               A List of the Most Popular Open Source Deno Modules.
@@ -44,11 +48,11 @@ function Layout({ children, title = 'denoMods' }: Props) {
 
         <div className='bg-gray-800'>
           <nav className='max-w-3xl px-6 mx-auto h-12 flex items-center'>
-            <Link href='/'>
+            {/* <Link href='/'>
               <a className='font-sans font-medium no-underline hover:underline text-white hover:text-yellow-400'>
                 Home
               </a>
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </header>
