@@ -1,12 +1,12 @@
 export const repositories = [
   'denoland/deno',
+  'oakserver/oak',
   'syumai/dinatra',
   'manyuanrong/deno_mongo',
   'manyuanrong/deno_mysql',
   'halvardssm/deno-nessie',
   'zhmushan/abc',
   'drashland/deno-drash',
-  'oakserver/oak',
   'keroxp/servest',
   'sholladay/pogo',
   'denosaurs/denon',
