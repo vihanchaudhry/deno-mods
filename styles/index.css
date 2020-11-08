@@ -52,6 +52,13 @@ pre {
   @apply overflow-auto p-3 my-1;
   background-color: #f5f2f0;
 }
+em {
+  @apply italic;
+}
+strong {
+  @apply font-bold;
+}
+
 
 @tailwind components;
 
