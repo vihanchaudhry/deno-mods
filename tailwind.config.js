@@ -14,4 +14,10 @@ module.exports = {
   },
   variants: {},
   plugins: [],
+  future: {
+    purgeLayersByDefault: true,
+    defaultLineHeights: true,
+    standardFontWeights: true,
+    removeDeprecatedGapUtilities: true,
+  },
 };
